@@ -1,34 +1,174 @@
-html{
+html {
     height: 100%;
 }
+
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section, summary {
     display: block;
 }
 
 body {
-     background: url('../images/bg_body.jpg') repeat 0 0;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url('../images/bg_body.jpg') repeat 0 0;
+     font-family: Verdana, Arial, sans-serif;
      font-size: 11px;
      width: 100%;
      height: 100%;
      color: #d7cfc8;
      line-height: normal;
-}
-h1{
-    font-size: 22px;
-    color: #ead4aa;
-}
-h2{
-    font-size: 18px;
-    color: #fff68d;
-}
-content .promo {
-    background: url('../images/bg_promo.png') repeat 0 0;
+     cursor: default;
 }
 
-wrapper{
+a{
+     text-decoration: underline;
+     color: #e8d1a4;
+}
+
+a:hover {
+    text-decoration: none;
+
+}
+
+.wrapper {
     width: 1000%;
     margin: 0 auto;
     min-height: 100%;
+}
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ead4aa;
+    font-size: 22px;
+    line-height: normal;
+    font-weight: normal;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff68d;
+    font-size: 18px;
+    line-height: normal;
+    font-weight: normal;
+}
+
+.header {
+    position: relative;
+    height: 160px;
+
+}
+
+.header .logo {
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+
+}
+
+.header .logo img {
+    display: block;
+    width: 223;
+    height: auto;
+
+}
+
+.header .mainmenu {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+}
+
+.header .mainmenu .menu-list {
+    list-style: none;
+    background: #ffffff;
+    border-radius: 4px;
+
+}
+
+.header .mainmenu .menu-item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: -4px;
+    color: #461500;
+
+}
+
+.header .mainmenu .menu-item.active {
+    background: url('../images/bg_menu-item-active.png') no-repeat center 0;
+
+
+}
+
+.header .mainmenu .menu-item a {
+    display: block;
+    height: 39px;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 117px;
+    color:inherit;
+    text-align: center;
+    line-height: 39px;
+    text-decoration: none;
+
+}
+
+.header .mainmenu .menu-item.active a {
+    cursor: default;
+}
+
+.header .lang-list {
+    position: absolute;
+    left: 20px;
+    top: 40px;
+
+}
+
+.header .lang-item {
+    position: relative;
+    display: inline-block;
+    margin-right: 16px;
+    color: #e8d1a4
+
+}
+
+.header .lang-item::before {
+    content: '|';
+    position: absolute;
+    left: 22px;
+    top: 0;
+    color: #ffffff;
+}
+
+.header .lang-item a {
+
+    color: #ffffff;
+}
+
+.header .auth {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+}
+
+.header .auth {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+}
+
+.header .auth-link {
+    position: relative;
+    display: inline-block;
+    margin-right: 16px;
+    color: #e8d1a4
+}
+
+.header .auth-link::before {
+    content: '|';
+    position: absolute;
+    left: -10px;
+    top: 0;
+    color: #ffffff;
+}
+
+.header .auth-link:first-child::before {
+    display: none;
 }
