@@ -29,10 +29,11 @@ a:hover {
 }
 
 .wrapper {
-    width: 1000%;
+    width: 100%;
     margin: 0 auto;
     min-height: 100%;
 }
+
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #ead4aa;
@@ -146,19 +147,20 @@ h2 {
     position: absolute;
     right: 20px;
     top: 40px;
+
 }
 
 .header .auth {
     position: absolute;
     right: 20px;
     top: 40px;
+    color:#ffffff;
 }
 
 .header .auth-link {
     position: relative;
     display: inline-block;
     margin-right: 16px;
-    color: #e8d1a4
 }
 
 .header .auth-link::before {
@@ -166,9 +168,16 @@ h2 {
     position: absolute;
     left: -10px;
     top: 0;
-    color: #ffffff;
 }
 
 .header .auth-link:first-child::before {
     display: none;
+}
+
+.header .auth-link a {
+    color: inherit;
+}
+
+.header .auth-link.signin {
+    color:#e8d1a4;
 }
