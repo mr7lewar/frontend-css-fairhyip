@@ -8,7 +8,7 @@ footer, header, hgroup, menu, nav, section, summary {
 }
 
 body {
-    background: url('../images/bg_body.jpg') repeat 0 0;
+     background: url('../images/bg_body.jpg') repeat 0 0;
      font-family: Verdana, Arial, sans-serif;
      font-size: 11px;
      width: 100%;
@@ -146,9 +146,12 @@ article p {
 .header .lang-item::before {
     content: '|';
     position: absolute;
-    left: 22px;
+    left: -12px;
     top: 0;
     color: #ffffff;
+}
+.header .lang-item:first-child::before {
+    display: none;
 }
 
 .header .lang-item a {
@@ -200,8 +203,9 @@ article p {
     padding: 20px;
     padding-left: 144px;
     margin-bottom: 54px;
-    background: url(../images/bg_about.png) no-repeat 56px center,
-     url(../images/bg_promo.png) repeat 0 0;
+    background:
+                url(../images/bg_about.png) no-repeat 56px center, 
+                url(../images/bg_promo.png) repeat 0 0;
     border-radius: 10px;
     font-style: italic;
     font-size: 14px;
@@ -239,8 +243,8 @@ article p {
     height: 75px;
     color: #dabc52;
     padding: 40px 20px 0;
-    font-size: 11pt;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 11px;
+    font-family: Verdana, 'Times New Roman', Times, serif;
 }
 .footer .footermenu{
     position: absolute;
@@ -268,4 +272,3 @@ article p {
 .footer .menu-item:first-child::before{
     display: none;
 }
-
